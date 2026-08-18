@@ -1,0 +1,12 @@
+{
+  "started_at": null,
+  "last_processed": null,
+  "cash": 1000.0,
+  "quantity": 0.0,
+  "entry_price": null,
+  "entry_cost": null,
+  "pending_order": null,
+  "equity_history": [],
+  "trades": []
+}
+

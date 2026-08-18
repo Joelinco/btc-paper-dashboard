@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BTC Paper Trading Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div><p class="eyebrow">FORWARD PAPER TEST</p><h1>Bitcoin Trend Monitor</h1><p class="sub">A risk-controlled virtual account. No exchange or real funds connected.</p></div><div id="signal" class="signal">LOADING</div></header>
+    <section class="hero-card">
+      <div><span>Virtual account</span><strong id="equity">$1,000.00</strong><small id="return">$0.00 · 0.00%</small></div>
+      <div class="price"><span>Bitcoin</span><strong id="price">—</strong><small id="updated">Waiting for first update</small></div>
+    </section>
+    <section class="grid">
+      <article><span>Cash</span><strong id="cash">$1,000.00</strong></article>
+      <article><span>Bitcoin position</span><strong id="position">$0.00</strong></article>
+      <article><span>Maximum exposure</span><strong>25%</strong></article>
+      <article><span>Price vs 200-day trend</span><strong id="trend">—</strong></article>
+      <article><span>Current week</span><strong id="currentWeek">0.00%</strong></article>
+      <article><span>Best week</span><strong id="bestWeek">0.00%</strong></article>
+      <article><span>Worst week</span><strong id="worstWeek">0.00%</strong></article>
+      <article><span>From account peak</span><strong id="drawdown">0.00%</strong></article>
+      <article><span>Highest balance</span><strong id="peak">$1,000.00</strong></article>
+      <article><span>Worst drawdown</span><strong id="maxDrawdown">0.00%</strong></article>
+    </section>
+    <section class="panel"><div class="panel-head"><div><p class="eyebrow">ACCOUNT VALUE</p><h2>Forward performance</h2></div><span>Starting balance $1,000</span></div><canvas id="chart" height="250"></canvas></section>
+    <section class="panel"><div class="panel-head"><div><p class="eyebrow">WEEK BY WEEK</p><h2>Weekly gains and losses</h2></div><span>Green gain · red loss</span></div><canvas id="weeklyChart" height="250"></canvas></section>
+    <section class="columns">
+      <article class="panel"><p class="eyebrow">TREND CHECK</p><h2>Market regime</h2><div class="rows"><div><span>50-day EMA</span><b id="ema50">—</b></div><div><span>200-day EMA</span><b id="ema200">—</b></div><div><span>BTC held</span><b id="quantity">0 BTC</b></div></div></article>
+      <article class="panel"><p class="eyebrow">ACTIVITY</p><h2>Paper trades</h2><div id="trades" class="trades"><p>No forward trades yet.</p></div></article>
+    </section>
+    <footer>Paper trading only · Updated daily after the UTC market close</footer>
+  </main><script src="app.js"></script>
+</body></html>
