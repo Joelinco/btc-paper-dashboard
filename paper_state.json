@@ -1,12 +1,16 @@
 {
-  "started_at": null,
-  "last_processed": null,
+  "started_at": "2026-08-18T10:55:37.364428+00:00",
+  "last_processed": "2026-08-17T00:00:00+00:00",
   "cash": 1000.0,
   "quantity": 0.0,
   "entry_price": null,
   "entry_cost": null,
   "pending_order": null,
-  "equity_history": [],
+  "equity_history": [
+    {
+      "date": "2026-08-17",
+      "value": 1000.0
+    }
+  ],
   "trades": []
 }
-
