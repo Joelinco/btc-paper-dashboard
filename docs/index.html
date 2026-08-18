@@ -30,6 +30,19 @@
       <article class="panel"><p class="eyebrow">TREND CHECK</p><h2>Market regime</h2><div class="rows"><div><span>50-day EMA</span><b id="ema50">—</b></div><div><span>200-day EMA</span><b id="ema200">—</b></div><div><span>BTC held</span><b id="quantity">0 BTC</b></div></div></article>
       <article class="panel"><p class="eyebrow">ACTIVITY</p><h2>Paper trades</h2><div id="trades" class="trades"><p>No forward trades yet.</p></div></article>
     </section>
+    <section class="panel" id="robustnessPanel">
+      <div class="panel-head"><div><p class="eyebrow">HISTORICAL ROBUSTNESS</p><h2>Strategy stress test</h2></div><span id="robustUpdated">Waiting for first test</span></div>
+      <div class="verdict-row"><strong id="robustVerdict" class="verdict">PENDING</strong><span id="robustChecks">0 of 6 checks passed</span></div>
+      <div class="grid robust-grid">
+        <article><span>Profitable calendar years</span><strong id="positiveYears">—</strong></article>
+        <article><span>Profitable rolling tests</span><strong id="positiveRolling">—</strong></article>
+        <article><span>Profitable rule variations</span><strong id="positiveVariations">—</strong></article>
+        <article><span>Historical trades</span><strong id="historicalTrades">—</strong></article>
+        <article><span>Full-history return</span><strong id="historicalReturn">—</strong></article>
+        <article><span>Full-history drawdown</span><strong id="historicalDrawdown">—</strong></article>
+      </div>
+      <p class="caution" id="robustNote">Historical testing reduces uncertainty but does not guarantee future returns.</p>
+    </section>
     <footer>Paper trading only · Updated daily after the UTC market close</footer>
   </main><script src="app.js"></script>
 </body></html>
