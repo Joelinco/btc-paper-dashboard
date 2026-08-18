@@ -1,0 +1,43 @@
+name: Update BTC paper dashboard
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python monitor.py
+      - name: Save paper account update
+        run: |
+          git config user.name "btc-paper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add paper_state.json docs/data/dashboard.json
+          git diff --cached --quiet || git commit -m "Update paper account"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Publish dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
