@@ -12,6 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).parent
 STATE_PATH = ROOT / "paper_state.json"
 DASHBOARD_PATH = ROOT / "docs" / "data" / "dashboard.json"
+ALERT_PATH = ROOT / ".slow_trade_alerts.json"
 BASE_URL = "https://data-api.binance.vision/api/v3/klines"
 STARTING_BALANCE = 1000.0
 ALLOCATION = 0.25
@@ -59,7 +60,7 @@ def signals(raw: pd.DataFrame) -> pd.DataFrame:
     return daily.dropna().reset_index(drop=True)
 
 
-def execute(state: dict, row: pd.Series) -> None:
+def execute(state: dict, row: pd.Series, alerts: list[dict]) -> None:
     cash, qty = float(state["cash"]), float(state["quantity"])
     pending = state.get("pending_order")
     if pending == "SELL" and qty > 0:
@@ -69,6 +70,9 @@ def execute(state: dict, row: pd.Series) -> None:
         cash += proceeds
         state["trades"].append({"date": row.timestamp.strftime("%d %b %Y"), "side": "SELL",
                                 "price": round(price, 2), "pnl": round(pnl, 2)})
+        alerts.append({"bot": "Slow daily bot", "side": "SELL",
+                       "date": row.timestamp.isoformat(), "price": round(price, 2),
+                       "pnl": round(pnl, 2)})
         qty, pending = 0.0, None
         state["entry_price"], state["entry_cost"] = None, None
     if pending == "BUY" and qty == 0:
@@ -80,6 +84,8 @@ def execute(state: dict, row: pd.Series) -> None:
         state["entry_price"], state["entry_cost"] = price, cost
         state["trades"].append({"date": row.timestamp.strftime("%d %b %Y"), "side": "BUY",
                                 "price": round(price, 2), "pnl": None})
+        alerts.append({"bot": "Slow daily bot", "side": "BUY",
+                       "date": row.timestamp.isoformat(), "price": round(price, 2), "pnl": None})
         pending = None
     if qty > 0 and bool(row.exit_signal):
         pending = "SELL"
@@ -95,6 +101,7 @@ def execute(state: dict, row: pd.Series) -> None:
 
 def main() -> None:
     daily = signals(market_data())
+    alerts: list[dict] = []
     state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
     if not state.get("last_processed"):
         latest = daily.iloc[-1]
@@ -105,7 +112,7 @@ def main() -> None:
     else:
         last = pd.Timestamp(state["last_processed"])
         for _, row in daily[daily.timestamp > last].iterrows():
-            execute(state, row)
+            execute(state, row, alerts)
 
     latest = daily.iloc[-1]
     equity = float(state["cash"]) + float(state["quantity"]) * float(latest.close)
@@ -154,6 +161,7 @@ def main() -> None:
     STATE_PATH.write_text(json.dumps(state, indent=2), encoding="utf-8")
     DASHBOARD_PATH.parent.mkdir(parents=True, exist_ok=True)
     DASHBOARD_PATH.write_text(json.dumps(dashboard, indent=2), encoding="utf-8")
+    ALERT_PATH.write_text(json.dumps(alerts, indent=2), encoding="utf-8")
     print(f"Dashboard updated: ${equity:,.2f}, signal {signal}")
 
 

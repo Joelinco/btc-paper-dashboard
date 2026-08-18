@@ -12,6 +12,7 @@ from monitor import market_data
 ROOT = Path(__file__).parent
 STATE_PATH = ROOT / "fast_state.json"
 OUTPUT_PATH = ROOT / "docs" / "data" / "fast.json"
+ALERT_PATH = ROOT / ".fast_trade_alerts.json"
 STARTING_BALANCE = 1_000.0
 ALLOCATION = 0.25
 FEE_RATE = 0.001
@@ -97,7 +98,7 @@ def simulate(x: pd.DataFrame, fee: float = FEE_RATE, slippage: float = SLIPPAGE)
             "profit_factor": round(gross_profit / gross_loss, 2) if gross_loss else 0.0}
 
 
-def execute(state: dict, row: pd.Series) -> None:
+def execute(state: dict, row: pd.Series, alerts: list[dict]) -> None:
     cash, qty = float(state["cash"]), float(state["quantity"])
     pending = state.get("pending_order")
     if pending == "SELL" and qty > 0:
@@ -107,6 +108,9 @@ def execute(state: dict, row: pd.Series) -> None:
         cash += proceeds
         state["trades"].append({"date": row.timestamp.strftime("%d %b %Y %H:%M UTC"),
                                 "side": "SELL", "price": round(price, 2), "pnl": round(pnl, 2)})
+        alerts.append({"bot": "Faster four-hour bot", "side": "SELL",
+                       "date": row.timestamp.isoformat(), "price": round(price, 2),
+                       "pnl": round(pnl, 2)})
         qty, pending = 0.0, None
         state["entry_price"], state["entry_cost"] = None, None
     if pending == "BUY" and qty == 0:
@@ -118,6 +122,8 @@ def execute(state: dict, row: pd.Series) -> None:
         state["entry_price"], state["entry_cost"] = price, cost
         state["trades"].append({"date": row.timestamp.strftime("%d %b %Y %H:%M UTC"),
                                 "side": "BUY", "price": round(price, 2), "pnl": None})
+        alerts.append({"bot": "Faster four-hour bot", "side": "BUY",
+                       "date": row.timestamp.isoformat(), "price": round(price, 2), "pnl": None})
         pending = None
     if qty > 0 and bool(row.exit_signal):
         pending = "SELL"
@@ -134,6 +140,7 @@ def execute(state: dict, row: pd.Series) -> None:
 def main() -> None:
     raw = market_data()
     data = signals(raw)
+    alerts: list[dict] = []
     if STATE_PATH.exists():
         state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
     else:
@@ -149,7 +156,7 @@ def main() -> None:
     else:
         last = pd.Timestamp(state["last_processed"])
         for _, row in data[data.timestamp > last].iterrows():
-            execute(state, row)
+            execute(state, row, alerts)
 
     latest = data.iloc[-1]
     equity = float(state["cash"]) + float(state["quantity"]) * float(latest.close)
@@ -201,6 +208,7 @@ def main() -> None:
     STATE_PATH.write_text(json.dumps(state, indent=2), encoding="utf-8")
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(output, indent=2), encoding="utf-8")
+    ALERT_PATH.write_text(json.dumps(alerts, indent=2), encoding="utf-8")
     print(f"Fast bot: {verdict}, {full['trades_per_year']} trades/year, "
           f"return {full['return_pct']}%, drawdown {full['max_drawdown_pct']}%")
 

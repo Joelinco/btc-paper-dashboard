@@ -1,0 +1,58 @@
+name: Update BTC paper dashboard
+
+on:
+  schedule:
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python monitor.py
+      - run: python robustness.py
+      - name: Send slow-bot trade alerts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          for alert in json.loads(Path('.slow_trade_alerts.json').read_text()):
+              pnl = "" if alert["pnl"] is None else f'\n\nPaper profit/loss: ${alert["pnl"]:,.2f}'
+              title = f'PAPER TRADE: {alert["bot"]} {alert["side"]}'
+              body = f'Bot: {alert["bot"]}\n\nAction: {alert["side"]}\n\nSimulated price: ${alert["price"]:,.2f}\n\nCandle: {alert["date"]}{pnl}\n\nPaper trading only — no real funds were used.'
+              subprocess.run(["gh", "issue", "create", "--title", title, "--body", body], check=True)
+          PY
+      - name: Save paper account and robustness updates
+        run: |
+          git config user.name "btc-paper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add paper_state.json docs/data/dashboard.json docs/data/robustness.json
+          git diff --cached --quiet || git commit -m "Update paper account and robustness report"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Publish dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
