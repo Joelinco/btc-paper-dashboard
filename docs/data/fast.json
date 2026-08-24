@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-24T09:06:25.953365+00:00",
-  "signal": "WAIT",
+  "updated": "2026-08-24T13:15:29.550688+00:00",
+  "signal": "BUY",
   "equity": 1042.11,
   "cash": 1042.11,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 77307.15,
+  "btc_price": 78443.65,
   "profit": 42.11,
   "return_pct": 4.21,
   "allocation_pct": 25,
@@ -156,6 +156,10 @@
     },
     {
       "date": "2026-08-24T04:00:00+00:00",
+      "value": 1042.11
+    },
+    {
+      "date": "2026-08-24T08:00:00+00:00",
       "value": 1042.11
     }
   ],
