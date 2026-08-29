@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-28T11:20:54.465395+00:00",
-  "latest_candle": "2026-08-27T00:00:00+00:00",
+  "updated": "2026-08-29T07:02:15.793825+00:00",
+  "latest_candle": "2026-08-28T00:00:00+00:00",
   "equity": 1000.0,
   "cash": 1000.0,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 80249.58,
+  "btc_price": 77845.87,
   "profit": 0.0,
   "return_pct": 0.0,
   "signal": "WAIT",
   "allocation_pct": 25,
-  "ema50": 68253.62,
-  "ema200": 72029.99,
-  "price_vs_ema200_pct": 11.41,
+  "ema50": 68629.79,
+  "ema200": 72087.86,
+  "price_vs_ema200_pct": 7.99,
   "history": [
     {
       "date": "2026-08-17",
@@ -56,6 +56,10 @@
     },
     {
       "date": "2026-08-27",
+      "value": 1000.0
+    },
+    {
+      "date": "2026-08-28",
       "value": 1000.0
     }
   ],
