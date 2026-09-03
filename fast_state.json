@@ -3,8 +3,8 @@
   "quantity": 0.0,
   "entry_price": null,
   "entry_cost": null,
-  "pending_order": null,
-  "last_processed": "2026-09-03T08:00:00+00:00",
+  "pending_order": "BUY",
+  "last_processed": "2026-09-03T12:00:00+00:00",
   "started_at": "2026-08-18T11:34:25.872601+00:00",
   "trades": [
     {
@@ -423,6 +423,10 @@
     },
     {
       "date": "2026-09-03T08:00:00+00:00",
+      "value": 1040.96
+    },
+    {
+      "date": "2026-09-03T12:00:00+00:00",
       "value": 1040.96
     }
   ]

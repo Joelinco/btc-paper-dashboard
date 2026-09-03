@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-03T12:51:25.222288+00:00",
-  "signal": "WAIT",
+  "updated": "2026-09-03T19:18:54.893741+00:00",
+  "signal": "BUY",
   "equity": 1040.96,
   "cash": 1040.96,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 77948.39,
+  "btc_price": 81348.0,
   "profit": 40.96,
   "return_pct": 4.1,
   "allocation_pct": 25,
@@ -400,6 +400,10 @@
     },
     {
       "date": "2026-09-03T08:00:00+00:00",
+      "value": 1040.96
+    },
+    {
+      "date": "2026-09-03T12:00:00+00:00",
       "value": 1040.96
     }
   ],
@@ -812,45 +816,45 @@
     },
     {
       "settings": "EMA 16/40, breakout 8",
-      "return_pct": 63.93,
+      "return_pct": 64.5,
       "max_drawdown_pct": -13.68,
       "trades": 236,
       "win_rate_pct": 37.71,
       "trades_per_year": 29.5,
       "average_win_pct": 7.36,
-      "average_loss_pct": -3.01,
+      "average_loss_pct": -3.0,
       "largest_win_pct": 34.1,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 0.9,
-      "profit_factor": 1.48
+      "expectancy_pct": 0.91,
+      "profit_factor": 1.49
     },
     {
       "settings": "EMA 16/40, breakout 12",
-      "return_pct": 71.44,
+      "return_pct": 72.04,
       "max_drawdown_pct": -10.88,
       "trades": 221,
       "win_rate_pct": 39.37,
       "trades_per_year": 27.6,
       "average_win_pct": 7.31,
-      "average_loss_pct": -3.03,
+      "average_loss_pct": -3.02,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 1.04,
+      "expectancy_pct": 1.05,
       "profit_factor": 1.57
     },
     {
       "settings": "EMA 16/40, breakout 16",
-      "return_pct": 69.98,
+      "return_pct": 70.58,
       "max_drawdown_pct": -10.94,
       "trades": 210,
       "win_rate_pct": 39.05,
       "trades_per_year": 26.2,
       "average_win_pct": 7.42,
-      "average_loss_pct": -2.98,
+      "average_loss_pct": -2.97,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 1.08,
-      "profit_factor": 1.59
+      "expectancy_pct": 1.09,
+      "profit_factor": 1.6
     },
     {
       "settings": "EMA 16/48, breakout 8",
