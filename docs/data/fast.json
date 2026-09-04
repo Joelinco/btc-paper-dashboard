@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-04T04:37:47.521897+00:00",
+  "updated": "2026-09-04T12:45:08.658733+00:00",
   "signal": "HOLD",
-  "equity": 1038.98,
+  "equity": 1040.17,
   "cash": 780.72,
-  "position_value": 258.26,
+  "position_value": 259.46,
   "btc_quantity": 0.0031943,
-  "btc_price": 80850.0,
-  "profit": 38.98,
-  "return_pct": 3.9,
+  "btc_price": 81224.86,
+  "profit": 40.17,
+  "return_pct": 4.02,
   "allocation_pct": 25,
   "history": [
     {
@@ -417,6 +417,14 @@
     {
       "date": "2026-09-04T00:00:00+00:00",
       "value": 1038.98
+    },
+    {
+      "date": "2026-09-04T04:00:00+00:00",
+      "value": 1038.36
+    },
+    {
+      "date": "2026-09-04T08:00:00+00:00",
+      "value": 1040.17
     }
   ],
   "trades": [
@@ -453,13 +461,13 @@
   ],
   "paper_only": true,
   "historical": {
-    "return_pct": 66.8,
+    "return_pct": 66.99,
     "max_drawdown_pct": -9.6,
     "trades": 248,
     "win_rate_pct": 35.89,
     "trades_per_year": 31.0,
     "average_win_pct": 7.43,
-    "average_loss_pct": -2.78,
+    "average_loss_pct": -2.77,
     "largest_win_pct": 33.69,
     "largest_loss_pct": -11.51,
     "expectancy_pct": 0.89,
@@ -566,43 +574,43 @@
     },
     {
       "period": "2026",
-      "return_pct": 2.38,
+      "return_pct": 2.5,
       "max_drawdown_pct": -4.76,
       "trades": 23,
       "win_rate_pct": 34.78,
       "trades_per_year": 34.1,
       "average_win_pct": 3.88,
-      "average_loss_pct": -1.41,
+      "average_loss_pct": -1.38,
       "largest_win_pct": 16.84,
       "largest_loss_pct": -3.3,
-      "expectancy_pct": 0.43,
-      "profit_factor": 1.47
+      "expectancy_pct": 0.45,
+      "profit_factor": 1.5
     }
   ],
   "variations": [
     {
       "settings": "EMA 8/40, breakout 8",
-      "return_pct": 53.99,
+      "return_pct": 54.17,
       "max_drawdown_pct": -17.96,
       "trades": 267,
       "win_rate_pct": 36.7,
       "trades_per_year": 33.4,
       "average_win_pct": 7.08,
-      "average_loss_pct": -2.99,
+      "average_loss_pct": -2.98,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
       "expectancy_pct": 0.71,
-      "profit_factor": 1.37
+      "profit_factor": 1.38
     },
     {
       "settings": "EMA 8/40, breakout 12",
-      "return_pct": 65.78,
+      "return_pct": 65.97,
       "max_drawdown_pct": -14.64,
       "trades": 248,
       "win_rate_pct": 39.11,
       "trades_per_year": 31.0,
       "average_win_pct": 6.94,
-      "average_loss_pct": -3.02,
+      "average_loss_pct": -3.01,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
       "expectancy_pct": 0.88,
@@ -610,13 +618,13 @@
     },
     {
       "settings": "EMA 8/40, breakout 16",
-      "return_pct": 59.36,
+      "return_pct": 59.55,
       "max_drawdown_pct": -14.41,
       "trades": 237,
       "win_rate_pct": 37.97,
       "trades_per_year": 29.6,
       "average_win_pct": 7.14,
-      "average_loss_pct": -3.0,
+      "average_loss_pct": -2.99,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
       "expectancy_pct": 0.85,
@@ -624,7 +632,7 @@
     },
     {
       "settings": "EMA 8/48, breakout 8",
-      "return_pct": 57.66,
+      "return_pct": 57.84,
       "max_drawdown_pct": -17.63,
       "trades": 259,
       "win_rate_pct": 37.45,
@@ -638,7 +646,7 @@
     },
     {
       "settings": "EMA 8/48, breakout 12",
-      "return_pct": 70.01,
+      "return_pct": 70.2,
       "max_drawdown_pct": -15.17,
       "trades": 238,
       "win_rate_pct": 40.34,
@@ -652,7 +660,7 @@
     },
     {
       "settings": "EMA 8/48, breakout 16",
-      "return_pct": 64.14,
+      "return_pct": 64.33,
       "max_drawdown_pct": -15.06,
       "trades": 226,
       "win_rate_pct": 39.38,
@@ -661,18 +669,18 @@
       "average_loss_pct": -3.08,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 0.94,
-      "profit_factor": 1.5
+      "expectancy_pct": 0.95,
+      "profit_factor": 1.51
     },
     {
       "settings": "EMA 8/64, breakout 8",
-      "return_pct": 80.79,
+      "return_pct": 81.0,
       "max_drawdown_pct": -16.9,
       "trades": 242,
       "win_rate_pct": 38.43,
       "trades_per_year": 30.2,
       "average_win_pct": 7.48,
-      "average_loss_pct": -2.97,
+      "average_loss_pct": -2.96,
       "largest_win_pct": 34.1,
       "largest_loss_pct": -11.51,
       "expectancy_pct": 1.05,
@@ -680,21 +688,21 @@
     },
     {
       "settings": "EMA 8/64, breakout 12",
-      "return_pct": 93.95,
+      "return_pct": 94.18,
       "max_drawdown_pct": -13.1,
       "trades": 220,
       "win_rate_pct": 41.82,
       "trades_per_year": 27.5,
       "average_win_pct": 7.2,
-      "average_loss_pct": -2.99,
+      "average_loss_pct": -2.98,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -11.51,
-      "expectancy_pct": 1.27,
+      "expectancy_pct": 1.28,
       "profit_factor": 1.73
     },
     {
       "settings": "EMA 8/64, breakout 16",
-      "return_pct": 86.52,
+      "return_pct": 86.74,
       "max_drawdown_pct": -12.7,
       "trades": 208,
       "win_rate_pct": 40.87,
@@ -708,7 +716,7 @@
     },
     {
       "settings": "EMA 12/40, breakout 8",
-      "return_pct": 55.59,
+      "return_pct": 55.77,
       "max_drawdown_pct": -15.34,
       "trades": 250,
       "win_rate_pct": 36.4,
@@ -722,7 +730,7 @@
     },
     {
       "settings": "EMA 12/40, breakout 12",
-      "return_pct": 63.05,
+      "return_pct": 63.24,
       "max_drawdown_pct": -13.2,
       "trades": 234,
       "win_rate_pct": 38.46,
@@ -736,7 +744,7 @@
     },
     {
       "settings": "EMA 12/40, breakout 16",
-      "return_pct": 58.32,
+      "return_pct": 58.5,
       "max_drawdown_pct": -13.25,
       "trades": 224,
       "win_rate_pct": 37.5,
@@ -750,7 +758,7 @@
     },
     {
       "settings": "EMA 12/48, breakout 8",
-      "return_pct": 59.69,
+      "return_pct": 59.88,
       "max_drawdown_pct": -15.09,
       "trades": 245,
       "win_rate_pct": 37.14,
@@ -764,7 +772,7 @@
     },
     {
       "settings": "EMA 12/48, breakout 12",
-      "return_pct": 73.42,
+      "return_pct": 73.62,
       "max_drawdown_pct": -11.75,
       "trades": 226,
       "win_rate_pct": 39.82,
@@ -778,7 +786,7 @@
     },
     {
       "settings": "EMA 12/48, breakout 16",
-      "return_pct": 68.99,
+      "return_pct": 69.19,
       "max_drawdown_pct": -11.81,
       "trades": 214,
       "win_rate_pct": 38.79,
@@ -792,7 +800,7 @@
     },
     {
       "settings": "EMA 12/64, breakout 8",
-      "return_pct": 81.19,
+      "return_pct": 81.39,
       "max_drawdown_pct": -15.61,
       "trades": 232,
       "win_rate_pct": 38.36,
@@ -806,7 +814,7 @@
     },
     {
       "settings": "EMA 12/64, breakout 12",
-      "return_pct": 95.87,
+      "return_pct": 96.09,
       "max_drawdown_pct": -11.76,
       "trades": 210,
       "win_rate_pct": 41.9,
@@ -820,7 +828,7 @@
     },
     {
       "settings": "EMA 12/64, breakout 16",
-      "return_pct": 87.11,
+      "return_pct": 87.33,
       "max_drawdown_pct": -11.36,
       "trades": 199,
       "win_rate_pct": 40.7,
@@ -834,7 +842,7 @@
     },
     {
       "settings": "EMA 16/40, breakout 8",
-      "return_pct": 63.55,
+      "return_pct": 63.74,
       "max_drawdown_pct": -13.68,
       "trades": 237,
       "win_rate_pct": 37.55,
@@ -848,7 +856,7 @@
     },
     {
       "settings": "EMA 16/40, breakout 12",
-      "return_pct": 71.05,
+      "return_pct": 71.24,
       "max_drawdown_pct": -10.88,
       "trades": 222,
       "win_rate_pct": 39.19,
@@ -857,18 +865,18 @@
       "average_loss_pct": -3.01,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 1.03,
+      "expectancy_pct": 1.04,
       "profit_factor": 1.57
     },
     {
       "settings": "EMA 16/40, breakout 16",
-      "return_pct": 69.59,
+      "return_pct": 69.79,
       "max_drawdown_pct": -10.94,
       "trades": 211,
       "win_rate_pct": 38.86,
       "trades_per_year": 26.4,
       "average_win_pct": 7.42,
-      "average_loss_pct": -2.97,
+      "average_loss_pct": -2.96,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -12.93,
       "expectancy_pct": 1.07,
@@ -876,7 +884,7 @@
     },
     {
       "settings": "EMA 16/48, breakout 8",
-      "return_pct": 71.15,
+      "return_pct": 71.35,
       "max_drawdown_pct": -14.56,
       "trades": 231,
       "win_rate_pct": 36.8,
@@ -890,21 +898,21 @@
     },
     {
       "settings": "EMA 16/48, breakout 12",
-      "return_pct": 84.28,
+      "return_pct": 84.49,
       "max_drawdown_pct": -11.23,
       "trades": 213,
       "win_rate_pct": 39.44,
       "trades_per_year": 26.6,
       "average_win_pct": 7.53,
-      "average_loss_pct": -2.9,
+      "average_loss_pct": -2.89,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -7.54,
-      "expectancy_pct": 1.21,
+      "expectancy_pct": 1.22,
       "profit_factor": 1.69
     },
     {
       "settings": "EMA 16/48, breakout 16",
-      "return_pct": 80.98,
+      "return_pct": 81.19,
       "max_drawdown_pct": -10.82,
       "trades": 202,
       "win_rate_pct": 39.11,
@@ -918,21 +926,21 @@
     },
     {
       "settings": "EMA 16/64, breakout 8",
-      "return_pct": 80.04,
+      "return_pct": 80.25,
       "max_drawdown_pct": -15.9,
       "trades": 222,
       "win_rate_pct": 36.94,
       "trades_per_year": 27.7,
       "average_win_pct": 7.86,
-      "average_loss_pct": -2.82,
+      "average_loss_pct": -2.81,
       "largest_win_pct": 34.1,
       "largest_loss_pct": -10.29,
       "expectancy_pct": 1.13,
-      "profit_factor": 1.63
+      "profit_factor": 1.64
     },
     {
       "settings": "EMA 16/64, breakout 12",
-      "return_pct": 93.19,
+      "return_pct": 93.42,
       "max_drawdown_pct": -12.06,
       "trades": 201,
       "win_rate_pct": 40.3,
@@ -946,7 +954,7 @@
     },
     {
       "settings": "EMA 16/64, breakout 16",
-      "return_pct": 86.95,
+      "return_pct": 87.17,
       "max_drawdown_pct": -11.66,
       "trades": 189,
       "win_rate_pct": 39.68,
@@ -955,20 +963,20 @@
       "average_loss_pct": -2.82,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -8.27,
-      "expectancy_pct": 1.39,
+      "expectancy_pct": 1.4,
       "profit_factor": 1.82
     }
   ],
   "cost_tests": [
     {
       "test": "Normal",
-      "return_pct": 66.8,
+      "return_pct": 66.99,
       "max_drawdown_pct": -9.6,
       "trades": 248,
       "win_rate_pct": 35.89,
       "trades_per_year": 31.0,
       "average_win_pct": 7.43,
-      "average_loss_pct": -2.78,
+      "average_loss_pct": -2.77,
       "largest_win_pct": 33.69,
       "largest_loss_pct": -11.51,
       "expectancy_pct": 0.89,
@@ -976,7 +984,7 @@
     },
     {
       "test": "Double costs",
-      "return_pct": 38.37,
+      "return_pct": 38.53,
       "max_drawdown_pct": -13.36,
       "trades": 248,
       "win_rate_pct": 33.47,
@@ -990,7 +998,7 @@
     },
     {
       "test": "Severe costs",
-      "return_pct": 7.92,
+      "return_pct": 8.05,
       "max_drawdown_pct": -19.15,
       "trades": 248,
       "win_rate_pct": 31.45,
@@ -999,7 +1007,7 @@
       "average_loss_pct": -3.26,
       "largest_win_pct": 32.76,
       "largest_loss_pct": -12.13,
-      "expectancy_pct": 0.18,
+      "expectancy_pct": 0.19,
       "profit_factor": 1.08
     }
   ],
