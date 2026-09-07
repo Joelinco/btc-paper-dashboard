@@ -1,13 +1,13 @@
 {
-  "updated": "2026-09-07T19:59:32.815710+00:00",
-  "signal": "SELL",
-  "equity": 1032.5,
-  "cash": 780.72,
-  "position_value": 251.78,
-  "btc_quantity": 0.0031943,
-  "btc_price": 78821.99,
-  "profit": 32.5,
-  "return_pct": 3.25,
+  "updated": "2026-09-07T22:52:17.041969+00:00",
+  "signal": "WAIT",
+  "equity": 1032.12,
+  "cash": 1032.12,
+  "position_value": 0.0,
+  "btc_quantity": 0.0,
+  "btc_price": 79365.82,
+  "profit": 32.12,
+  "return_pct": 3.21,
   "allocation_pct": 25,
   "history": [
     {
@@ -501,6 +501,10 @@
     {
       "date": "2026-09-07T12:00:00+00:00",
       "value": 1032.5
+    },
+    {
+      "date": "2026-09-07T16:00:00+00:00",
+      "value": 1032.12
     }
   ],
   "trades": [
@@ -533,6 +537,12 @@
       "side": "BUY",
       "price": 81388.67,
       "pnl": null
+    },
+    {
+      "date": "07 Sep 2026 16:00 UTC",
+      "side": "SELL",
+      "price": 78782.59,
+      "pnl": -8.84
     }
   ],
   "paper_only": true,
