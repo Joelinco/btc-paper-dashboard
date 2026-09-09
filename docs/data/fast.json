@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-08T22:43:01.025080+00:00",
+  "updated": "2026-09-09T04:46:27.392657+00:00",
   "signal": "WAIT",
   "equity": 1032.12,
   "cash": 1032.12,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 78446.0,
+  "btc_price": 78638.01,
   "profit": 32.12,
   "return_pct": 3.21,
   "allocation_pct": 25,
@@ -529,6 +529,14 @@
     {
       "date": "2026-09-08T16:00:00+00:00",
       "value": 1032.12
+    },
+    {
+      "date": "2026-09-08T20:00:00+00:00",
+      "value": 1032.12
+    },
+    {
+      "date": "2026-09-09T00:00:00+00:00",
+      "value": 1032.12
     }
   ],
   "trades": [
@@ -688,7 +696,7 @@
       "max_drawdown_pct": -4.76,
       "trades": 23,
       "win_rate_pct": 34.78,
-      "trades_per_year": 33.6,
+      "trades_per_year": 33.5,
       "average_win_pct": 3.88,
       "average_loss_pct": -1.58,
       "largest_win_pct": 16.84,
@@ -1036,7 +1044,7 @@
     },
     {
       "settings": "EMA 16/64, breakout 8",
-      "return_pct": 81.68,
+      "return_pct": 81.81,
       "max_drawdown_pct": -15.9,
       "trades": 222,
       "win_rate_pct": 37.39,
@@ -1050,7 +1058,7 @@
     },
     {
       "settings": "EMA 16/64, breakout 12",
-      "return_pct": 95.17,
+      "return_pct": 95.31,
       "max_drawdown_pct": -12.06,
       "trades": 201,
       "win_rate_pct": 40.8,
@@ -1060,11 +1068,11 @@
       "largest_win_pct": 33.69,
       "largest_loss_pct": -8.27,
       "expectancy_pct": 1.4,
-      "profit_factor": 1.84
+      "profit_factor": 1.85
     },
     {
       "settings": "EMA 16/64, breakout 16",
-      "return_pct": 88.86,
+      "return_pct": 89.0,
       "max_drawdown_pct": -11.66,
       "trades": 189,
       "win_rate_pct": 40.21,
