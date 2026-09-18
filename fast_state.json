@@ -1,10 +1,10 @@
 {
-  "cash": 1032.121513356189,
-  "quantity": 0.0,
-  "entry_price": null,
-  "entry_cost": null,
-  "pending_order": "BUY",
-  "last_processed": "2026-09-18T12:00:00+00:00",
+  "cash": 774.0911350171418,
+  "quantity": 0.003191599490637335,
+  "entry_price": 80765.96280000001,
+  "entry_cost": 258.0303783390473,
+  "pending_order": null,
+  "last_processed": "2026-09-18T16:00:00+00:00",
   "started_at": "2026-08-18T11:34:25.872601+00:00",
   "trades": [
     {
@@ -42,6 +42,12 @@
       "side": "SELL",
       "price": 78782.59,
       "pnl": -8.84
+    },
+    {
+      "date": "18 Sep 2026 16:00 UTC",
+      "side": "BUY",
+      "price": 80765.96,
+      "pnl": null
     }
   ],
   "equity_history": [
@@ -800,6 +806,10 @@
     {
       "date": "2026-09-18T12:00:00+00:00",
       "value": 1032.12
+    },
+    {
+      "date": "2026-09-18T16:00:00+00:00",
+      "value": 1033.26
     }
   ]
 }
