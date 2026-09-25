@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-24T04:45:54.980430+00:00",
-  "latest_candle": "2026-09-23T00:00:00+00:00",
-  "equity": 1024.17,
+  "updated": "2026-09-25T04:54:21.878359+00:00",
+  "latest_candle": "2026-09-24T00:00:00+00:00",
+  "equity": 1024.21,
   "cash": 750.0,
-  "position_value": 274.17,
+  "position_value": 274.21,
   "btc_quantity": 0.00324855,
-  "btc_price": 84397.6,
-  "profit": 24.17,
+  "btc_price": 84410.24,
+  "profit": 24.21,
   "return_pct": 2.42,
   "signal": "HOLD",
   "allocation_pct": 25,
-  "ema50": 75804.3,
-  "ema200": 73756.77,
-  "price_vs_ema200_pct": 14.43,
+  "ema50": 76141.79,
+  "ema200": 73862.77,
+  "price_vs_ema200_pct": 14.28,
   "history": [
     {
       "date": "2026-08-17",
@@ -165,6 +165,10 @@
     {
       "date": "2026-09-23",
       "value": 1024.17
+    },
+    {
+      "date": "2026-09-24",
+      "value": 1024.21
     }
   ],
   "weekly_returns": [
@@ -186,10 +190,10 @@
     },
     {
       "week": "27 Sep",
-      "return_pct": 1.03
+      "return_pct": 1.04
     }
   ],
-  "current_week_pct": 1.03,
+  "current_week_pct": 1.04,
   "best_week_pct": 1.37,
   "worst_week_pct": 0.0,
   "peak_equity": 1031.39,
