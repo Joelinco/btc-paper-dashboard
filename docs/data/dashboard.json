@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-28T05:20:03.200924+00:00",
-  "latest_candle": "2026-09-27T00:00:00+00:00",
-  "equity": 1024.41,
+  "updated": "2026-09-29T05:41:14.578155+00:00",
+  "latest_candle": "2026-09-28T00:00:00+00:00",
+  "equity": 1021.25,
   "cash": 750.0,
-  "position_value": 274.41,
+  "position_value": 271.25,
   "btc_quantity": 0.00324855,
-  "btc_price": 84472.0,
-  "profit": 24.41,
-  "return_pct": 2.44,
+  "btc_price": 83500.01,
+  "profit": 21.25,
+  "return_pct": 2.13,
   "signal": "HOLD",
   "allocation_pct": 25,
-  "ema50": 77068.95,
-  "ema200": 74172.31,
-  "price_vs_ema200_pct": 13.89,
+  "ema50": 77321.15,
+  "ema200": 74265.13,
+  "price_vs_ema200_pct": 12.44,
   "history": [
     {
       "date": "2026-08-17",
@@ -181,6 +181,10 @@
     {
       "date": "2026-09-27",
       "value": 1024.41
+    },
+    {
+      "date": "2026-09-28",
+      "value": 1021.25
     }
   ],
   "weekly_returns": [
@@ -203,14 +207,18 @@
     {
       "week": "27 Sep",
       "return_pct": 1.06
+    },
+    {
+      "week": "04 Oct",
+      "return_pct": -0.31
     }
   ],
-  "current_week_pct": 1.06,
+  "current_week_pct": -0.31,
   "best_week_pct": 1.37,
-  "worst_week_pct": 0.0,
+  "worst_week_pct": -0.31,
   "peak_equity": 1031.39,
-  "current_drawdown_pct": -0.68,
-  "max_drawdown_pct": -0.82,
+  "current_drawdown_pct": -0.98,
+  "max_drawdown_pct": -0.98,
   "trades": [
     {
       "date": "14 Sep 2026",
