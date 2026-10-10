@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-09T06:05:24.109718+00:00",
+  "updated": "2026-10-10T05:49:00.510795+00:00",
   "verdict": "PROMISING",
   "checks_passed": 6,
   "checks_total": 6,
   "full_history": {
-    "return_pct": 141.58,
+    "return_pct": 142.26,
     "max_drawdown_pct": -28.91,
     "trades": 13,
-    "buy_hold_pct": 1139.78,
+    "buy_hold_pct": 1149.17,
     "win_rate_pct": 61.54
   },
   "scores": {
@@ -75,36 +75,36 @@
     },
     {
       "period": "2026",
-      "return_pct": 1.52,
-      "max_drawdown_pct": -1.57,
+      "return_pct": 1.8,
+      "max_drawdown_pct": -1.53,
       "trades": 1,
-      "buy_hold_pct": -7.97,
+      "buy_hold_pct": -6.98,
       "win_rate_pct": 100.0
     }
   ],
   "rolling": [
     {
       "period": "Oct 2018\u2013Oct 2020",
-      "return_pct": 9.49,
+      "return_pct": 8.96,
       "max_drawdown_pct": -23.25,
       "trades": 4,
-      "buy_hold_pct": 63.66,
+      "buy_hold_pct": 60.23,
       "win_rate_pct": 50.0
     },
     {
       "period": "Apr 2019\u2013Apr 2021",
-      "return_pct": 140.96,
+      "return_pct": 137.86,
       "max_drawdown_pct": -23.25,
       "trades": 4,
-      "buy_hold_pct": 1072.31,
+      "buy_hold_pct": 1021.63,
       "win_rate_pct": 50.0
     },
     {
       "period": "Oct 2019\u2013Oct 2021",
-      "return_pct": 71.13,
+      "return_pct": 74.55,
       "max_drawdown_pct": -28.91,
       "trades": 4,
-      "buy_hold_pct": 555.34,
+      "buy_hold_pct": 575.39,
       "win_rate_pct": 50.0
     },
     {
@@ -112,79 +112,79 @@
       "return_pct": 78.18,
       "max_drawdown_pct": -28.91,
       "trades": 2,
-      "buy_hold_pct": 520.71,
+      "buy_hold_pct": 499.81,
       "win_rate_pct": 100.0
     },
     {
       "period": "Oct 2020\u2013Oct 2022",
-      "return_pct": 70.32,
-      "max_drawdown_pct": -28.17,
+      "return_pct": 69.72,
+      "max_drawdown_pct": -28.12,
       "trades": 2,
-      "buy_hold_pct": 90.18,
+      "buy_hold_pct": 87.14,
       "win_rate_pct": 100.0
     },
     {
       "period": "Apr 2021\u2013Apr 2023",
-      "return_pct": -8.49,
-      "max_drawdown_pct": -14.06,
+      "return_pct": -7.98,
+      "max_drawdown_pct": -14.21,
       "trades": 4,
-      "buy_hold_pct": -51.42,
+      "buy_hold_pct": -49.9,
       "win_rate_pct": 50.0
     },
     {
       "period": "Oct 2021\u2013Oct 2023",
-      "return_pct": -6.69,
-      "max_drawdown_pct": -13.06,
+      "return_pct": -6.1,
+      "max_drawdown_pct": -13.22,
       "trades": 3,
-      "buy_hold_pct": -50.45,
+      "buy_hold_pct": -48.07,
       "win_rate_pct": 33.33
     },
     {
       "period": "Apr 2022\u2013Apr 2024",
-      "return_pct": 31.43,
+      "return_pct": 32.36,
       "max_drawdown_pct": -7.09,
       "trades": 3,
-      "buy_hold_pct": 57.1,
+      "buy_hold_pct": 58.59,
       "win_rate_pct": 66.67
     },
     {
       "period": "Oct 2022\u2013Oct 2024",
-      "return_pct": 14.59,
+      "return_pct": 14.94,
       "max_drawdown_pct": -16.23,
       "trades": 6,
-      "buy_hold_pct": 210.9,
+      "buy_hold_pct": 221.66,
       "win_rate_pct": 33.33
     },
     {
       "period": "Apr 2023\u2013Apr 2025",
-      "return_pct": 23.63,
+      "return_pct": 23.76,
       "max_drawdown_pct": -16.33,
       "trades": 5,
-      "buy_hold_pct": 197.99,
+      "buy_hold_pct": 181.05,
       "win_rate_pct": 40.0
     },
     {
       "period": "Oct 2023\u2013Oct 2025",
-      "return_pct": 35.42,
+      "return_pct": 35.81,
       "max_drawdown_pct": -16.33,
       "trades": 5,
-      "buy_hold_pct": 342.1,
+      "buy_hold_pct": 345.9,
       "win_rate_pct": 60.0
     },
     {
       "period": "Apr 2024\u2013Apr 2026",
-      "return_pct": -1.96,
-      "max_drawdown_pct": -11.55,
+      "return_pct": -2.1,
+      "max_drawdown_pct": -11.52,
       "trades": 5,
-      "buy_hold_pct": 0.2,
+      "buy_hold_pct": -0.73,
       "win_rate_pct": 40.0
     },
     {
       "period": "Oct 2024\u2013Oct 2026",
-      "return_pct": 11.76,
-      "max_drawdown_pct": -9.63,
+      "return_pct": 12.0,
+      "max_drawdown_pct": -9.68,
       "trades": 3,
-      "buy_hold_pct": 36.53,
+      "buy_hold_pct": 37.49,
       "win_rate_pct": 100.0
     }
   ],
@@ -193,248 +193,248 @@
       "test": "Normal",
       "fee_pct": 0.1,
       "slippage_pct": 0.05,
-      "return_pct": 141.58,
+      "return_pct": 142.26,
       "max_drawdown_pct": -28.91,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "test": "Double costs",
       "fee_pct": 0.2,
       "slippage_pct": 0.1,
-      "return_pct": 138.86,
+      "return_pct": 139.53,
       "max_drawdown_pct": -28.9,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.85
     },
     {
       "test": "Severe costs",
       "fee_pct": 0.3,
       "slippage_pct": 0.2,
-      "return_pct": 135.29,
+      "return_pct": 135.94,
       "max_drawdown_pct": -28.88,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.85
     }
   ],
   "sensitivity": [
     {
       "settings": "EMA 40/180, band 1%",
-      "return_pct": 134.68,
+      "return_pct": 135.33,
       "max_drawdown_pct": -34.08,
       "trades": 16,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     },
     {
       "settings": "EMA 40/180, band 2%",
-      "return_pct": 161.35,
+      "return_pct": 162.07,
       "max_drawdown_pct": -29.94,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 40/180, band 3%",
-      "return_pct": 160.85,
+      "return_pct": 161.56,
       "max_drawdown_pct": -29.94,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 66.67
     },
     {
       "settings": "EMA 40/200, band 1%",
-      "return_pct": 162.02,
+      "return_pct": 162.15,
       "max_drawdown_pct": -29.94,
       "trades": 15,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.33
     },
     {
       "settings": "EMA 40/200, band 2%",
-      "return_pct": 158.38,
+      "return_pct": 158.51,
       "max_drawdown_pct": -29.94,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.85
     },
     {
       "settings": "EMA 40/200, band 3%",
-      "return_pct": 155.79,
+      "return_pct": 155.94,
       "max_drawdown_pct": -29.94,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 58.33
     },
     {
       "settings": "EMA 40/220, band 1%",
-      "return_pct": 151.0,
+      "return_pct": 151.71,
       "max_drawdown_pct": -31.79,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 40/220, band 2%",
-      "return_pct": 147.45,
+      "return_pct": 148.15,
       "max_drawdown_pct": -31.94,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 40/220, band 3%",
-      "return_pct": 145.21,
+      "return_pct": 145.9,
       "max_drawdown_pct": -31.94,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 50/180, band 1%",
-      "return_pct": 129.2,
+      "return_pct": 130.14,
       "max_drawdown_pct": -31.26,
       "trades": 16,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     },
     {
       "settings": "EMA 50/180, band 2%",
-      "return_pct": 151.96,
+      "return_pct": 152.97,
       "max_drawdown_pct": -28.91,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 50/180, band 3%",
-      "return_pct": 151.36,
+      "return_pct": 152.37,
       "max_drawdown_pct": -28.91,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 66.67
     },
     {
       "settings": "EMA 50/200, band 1%",
-      "return_pct": 138.95,
+      "return_pct": 139.62,
       "max_drawdown_pct": -28.91,
       "trades": 15,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.33
     },
     {
       "settings": "EMA 50/200, band 2%",
-      "return_pct": 141.58,
+      "return_pct": 142.26,
       "max_drawdown_pct": -28.91,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 50/200, band 3%",
-      "return_pct": 139.23,
+      "return_pct": 139.9,
       "max_drawdown_pct": -28.91,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 66.67
     },
     {
       "settings": "EMA 50/220, band 1%",
-      "return_pct": 135.84,
+      "return_pct": 136.48,
       "max_drawdown_pct": -29.66,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 50/220, band 2%",
-      "return_pct": 132.49,
+      "return_pct": 133.12,
       "max_drawdown_pct": -29.83,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 50/220, band 3%",
-      "return_pct": 130.39,
+      "return_pct": 131.01,
       "max_drawdown_pct": -29.83,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 60/180, band 1%",
-      "return_pct": 131.31,
+      "return_pct": 131.95,
       "max_drawdown_pct": -33.35,
       "trades": 16,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     },
     {
       "settings": "EMA 60/180, band 2%",
-      "return_pct": 154.56,
+      "return_pct": 155.26,
       "max_drawdown_pct": -29.36,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 60/180, band 3%",
-      "return_pct": 153.95,
+      "return_pct": 154.66,
       "max_drawdown_pct": -29.36,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 66.67
     },
     {
       "settings": "EMA 60/200, band 1%",
-      "return_pct": 147.16,
+      "return_pct": 147.83,
       "max_drawdown_pct": -29.3,
       "trades": 15,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 53.33
     },
     {
       "settings": "EMA 60/200, band 2%",
-      "return_pct": 149.88,
+      "return_pct": 150.56,
       "max_drawdown_pct": -29.3,
       "trades": 13,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 61.54
     },
     {
       "settings": "EMA 60/200, band 3%",
-      "return_pct": 147.37,
+      "return_pct": 148.04,
       "max_drawdown_pct": -29.3,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 66.67
     },
     {
       "settings": "EMA 60/220, band 1%",
-      "return_pct": 132.63,
+      "return_pct": 133.23,
       "max_drawdown_pct": -30.02,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     },
     {
       "settings": "EMA 60/220, band 2%",
-      "return_pct": 129.8,
+      "return_pct": 130.4,
       "max_drawdown_pct": -30.02,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     },
     {
       "settings": "EMA 60/220, band 3%",
-      "return_pct": 127.72,
+      "return_pct": 128.31,
       "max_drawdown_pct": -30.02,
       "trades": 12,
-      "buy_hold_pct": 1139.78,
+      "buy_hold_pct": 1149.17,
       "win_rate_pct": 50.0
     }
   ],
