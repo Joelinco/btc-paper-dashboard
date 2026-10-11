@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-11T05:51:04.697687+00:00",
+  "updated": "2026-10-11T14:56:38.342305+00:00",
   "signal": "WAIT",
   "equity": 1020.58,
   "cash": 1020.58,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 82820.01,
+  "btc_price": 83164.0,
   "profit": 20.58,
   "return_pct": 2.06,
   "allocation_pct": 25,
@@ -1305,6 +1305,14 @@
     {
       "date": "2026-10-11T00:00:00+00:00",
       "value": 1020.58
+    },
+    {
+      "date": "2026-10-11T04:00:00+00:00",
+      "value": 1020.58
+    },
+    {
+      "date": "2026-10-11T08:00:00+00:00",
+      "value": 1020.58
     }
   ],
   "trades": [
@@ -1554,45 +1562,45 @@
     },
     {
       "settings": "EMA 8/48, breakout 8",
-      "return_pct": 57.03,
+      "return_pct": 58.42,
       "max_drawdown_pct": -17.63,
-      "trades": 259,
-      "win_rate_pct": 37.07,
-      "trades_per_year": 32.4,
+      "trades": 258,
+      "win_rate_pct": 37.21,
+      "trades_per_year": 32.2,
       "average_win_pct": 7.2,
       "average_loss_pct": -3.03,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 0.76,
-      "profit_factor": 1.4
+      "expectancy_pct": 0.78,
+      "profit_factor": 1.41
     },
     {
       "settings": "EMA 8/48, breakout 12",
-      "return_pct": 69.66,
+      "return_pct": 71.16,
       "max_drawdown_pct": -15.17,
-      "trades": 238,
-      "win_rate_pct": 39.92,
-      "trades_per_year": 29.8,
+      "trades": 237,
+      "win_rate_pct": 40.08,
+      "trades_per_year": 29.6,
       "average_win_pct": 7.02,
-      "average_loss_pct": -3.08,
+      "average_loss_pct": -3.07,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 0.95,
-      "profit_factor": 1.52
+      "expectancy_pct": 0.97,
+      "profit_factor": 1.53
     },
     {
       "settings": "EMA 8/48, breakout 16",
-      "return_pct": 63.25,
+      "return_pct": 64.69,
       "max_drawdown_pct": -15.06,
-      "trades": 227,
-      "win_rate_pct": 38.77,
-      "trades_per_year": 28.4,
+      "trades": 226,
+      "win_rate_pct": 38.94,
+      "trades_per_year": 28.2,
       "average_win_pct": 7.22,
       "average_loss_pct": -3.05,
       "largest_win_pct": 35.07,
       "largest_loss_pct": -12.93,
-      "expectancy_pct": 0.93,
-      "profit_factor": 1.5
+      "expectancy_pct": 0.95,
+      "profit_factor": 1.51
     },
     {
       "settings": "EMA 8/64, breakout 8",
