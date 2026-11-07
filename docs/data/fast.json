@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-06T21:31:48.627154+00:00",
+  "updated": "2026-11-07T06:02:07.227497+00:00",
   "signal": "WAIT",
   "equity": 1015.98,
   "cash": 1015.98,
   "position_value": 0.0,
   "btc_quantity": 0.0,
-  "btc_price": 75888.01,
+  "btc_price": 75893.66,
   "profit": 15.98,
   "return_pct": 1.6,
   "allocation_pct": 25,
@@ -1945,6 +1945,14 @@
     {
       "date": "2026-11-06T16:00:00+00:00",
       "value": 1015.98
+    },
+    {
+      "date": "2026-11-06T20:00:00+00:00",
+      "value": 1015.98
+    },
+    {
+      "date": "2026-11-07T00:00:00+00:00",
+      "value": 1015.98
     }
   ],
   "trades": [
@@ -2152,7 +2160,7 @@
       "max_drawdown_pct": -4.76,
       "trades": 27,
       "win_rate_pct": 29.63,
-      "trades_per_year": 31.9,
+      "trades_per_year": 31.8,
       "average_win_pct": 3.88,
       "average_loss_pct": -1.58,
       "largest_win_pct": 16.84,
